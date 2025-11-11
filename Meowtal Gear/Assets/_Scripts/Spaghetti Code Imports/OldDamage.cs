@@ -16,18 +16,14 @@ public class Damage : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            print("I dealt damage!");
-            player.Damage(damageDealt, damageForce);
-            //this will knock back the player if colliding with the damaging object.
-            player.knockbackCount = player.knockbackLength;
-            //if the x.position of the damage is to your right, the player will get knocked back to the left.
+        if (other.CompareTag("Player")){
+            bool direction;
             if (other.transform.position.x < transform.position.x) {
-                player.knockFromRight = true;
+                direction = true;
             } else {
-                player.knockFromRight = false;
+                direction = false;
             }
+            player.Damage(damageDealt, damageForce, direction);
         }
     }
 }

@@ -1,9 +1,6 @@
-using Unity.Cinemachine;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,39 +16,24 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private bool isWalled;
     private bool doubleJump = false;
-    private int maxHealth = 100;
-    public int currentHealth; // Build a method to pull this so the value can remain private
+    private bool isWallJumping = false;
+    private float initialGravity;
+    private float maxHealth = 100;
+    private float currentHealth; // Build a method to pull this so the value can remain private
     private Vector2 moveInput;
     
     // Movement Stats
     [SerializeField] private float moveSpeed;
+    [SerializeField] private float climbSpeed;
+    [SerializeField] private float slideSpeed;
     [SerializeField] private float jumpPower;
     [SerializeField] private Vector2 wallJumpPower;
     [SerializeField] private float wallJumpDuration;
-    [SerializeField] private float wallJumpDirection;
-    [SerializeField] private float slideSpeed;
-    private bool isWallJumping = false;
+    private float wallJumpDirection;
 
-    /*// Ground check for Jump
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckRadius; // Radius of groundcheck
-    [SerializeField] private LayerMask whatIsGround; // What layer can the player jump
-    [SerializeField] private bool isGrounded; // Is the player grounded?
-
-    // Wall check for Wall Jump
-    [SerializeField] private Transform wallCheck;
-    [SerializeField] private float wallCheckRadius; // Radius of wallcheck
-    [SerializeField] private LayerMask whatIsWall; // What layer can the player wall slide/jump
-    [SerializeField] private bool isWalled; // Is the player on the wall?*/
-    
     // DMG knockback
-    public float knockbackLength; //how long we are going to get pushed back
-    public float knockbackCount;
-    public bool knockFromRight; //direction where we are going to get pushed
-
-    // HP
-    
-    
+    private float knockbackLength;
+    private bool knockFromRight;
     
     // Audio
     private AudioSource source;
@@ -74,6 +56,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
+        initialGravity = myRigidBody.gravityScale;
     }
 
     // Update is called once per frame
@@ -81,56 +64,52 @@ public class PlayerController : MonoBehaviour
     {
         /*myAnimator.SetFloat("Speed", Mathf.Abs(myRigidBody.linearVelocity.x));
         myAnimator.SetBool("Grounded", isGrounded);*/
+        
+        HealthManage();
+        JumpManage();
+        Run();
+        Climb();
+        FlipSprite();
+    }
 
-        isWalled = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+    private void HealthManage()
+    {
+        if (currentHealth > maxHealth) {  currentHealth = maxHealth; }
+        if (currentHealth <= 0) { Die();}
+    }
 
+    private void JumpManage()
+    {
         if (isWalled && isWallJumping != true && isGrounded != true) {
             wallJumpDirection = -transform.localScale.x;
         }
         if (isGrounded) {
             doubleJump = true;
         }
-
-        if (currentHealth > maxHealth) {  currentHealth = maxHealth; }
-        if (currentHealth <= 0) { Die();}
-        Run();
-        FlipSprite();
     }
-
-    private void OnMove(InputValue value)
-    {
-        moveInput = value.Get<Vector2>();
-    }
-
-    private void OnJump(InputValue value)
-    {
-        if (value.isPressed && isGrounded) {
-            myRigidBody.linearVelocity = new Vector2(myRigidBody.linearVelocity.y, jumpPower);
-            source.PlayOneShot(jumpSound, 1F);
-        } else if (value.isPressed && isWalled && isWallJumping != true) {
-            isWallJumping = true;
-            myRigidBody.linearVelocity = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
-            source.PlayOneShot(wallJumpSound, 1F);
-            transform.localScale = new Vector2(Mathf.Sign(myRigidBody.linearVelocity.x), 1f);
-            Invoke(nameof(StopWallJumping), wallJumpDuration);
-        } else if (value.isPressed && doubleJump) {
-            myRigidBody.linearVelocity = new Vector2(myRigidBody.linearVelocity.y, jumpPower);
-            source.PlayOneShot(doubleJumpSound, 1F);
-            doubleJump = false;
-        }
-    }
-
-    private void StopWallJumping()
-    {
-        isWallJumping = false;
-    }
-
+    
     private void Run()
     {
         if (!isWallJumping) {
-            myRigidBody.linearVelocity = new Vector2((moveInput.x * moveSpeed), myRigidBody.linearVelocity.y);
+            Vector2 playerVelocity = new Vector2(moveInput.x * moveSpeed, myRigidBody.linearVelocity.y);
+            myRigidBody.linearVelocity = playerVelocity;
+            bool hasHorizontalSpeed = Mathf.Abs(myRigidBody.linearVelocity.x) > Mathf.Epsilon;
+            //myAnimator.SetBool("IsRunning", hasHorizontalSpeed);
         } 
+    }
+
+    private void Climb()
+    {
+        if (feetBox.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        {
+            Vector2 playerClimbVelocity = new Vector2(myRigidBody.linearVelocity.x, moveInput.y * climbSpeed);
+            myRigidBody.linearVelocity = playerClimbVelocity;
+            //myAnimator.SetBool("IsClimbing", true);
+            myRigidBody.gravityScale = 0;
+        } else {
+            myRigidBody.gravityScale = initialGravity;
+            //myAnimator.SetBool("IsClimbing", false);
+        }
     }
 
     private void FlipSprite()
@@ -143,10 +122,46 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    
+    private void OnMove(InputValue value)
+    {
+        moveInput = value.Get<Vector2>();
+    }
 
+    private void OnJump(InputValue value)
+    {
+        if (value.isPressed && isGrounded) {
+            myRigidBody.linearVelocity = Vector2.up * jumpPower;
+            source.PlayOneShot(jumpSound, 1F);
+        } else if (value.isPressed && isWalled && isWallJumping != true) {
+            isWallJumping = true;
+            myRigidBody.linearVelocity = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y); // TODO Match this code to the * jumpPower format
+            source.PlayOneShot(wallJumpSound, 1F);
+            transform.localScale = new Vector2(Mathf.Sign(myRigidBody.linearVelocity.x), 1f);
+            Invoke(nameof(StopWallJumping), wallJumpDuration);
+        } else if (value.isPressed && doubleJump) {
+            myRigidBody.linearVelocity = Vector2.up * jumpPower;
+            source.PlayOneShot(doubleJumpSound, 1F);
+            doubleJump = false;
+        }
+    }
+    
+    private void StopWallJumping()
+    {
+        isWallJumping = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.transform.CompareTag("Moving Platform"))
+        {
+            transform.parent = other.transform;
+        }
+    }
+    
     private void OnCollisionStay2D(Collision2D other)
     {
-        if (isWalled && isWallJumping != true && isGrounded != true)
+        if (isWalled && !isWallJumping && !isGrounded)
         {
             wallJumpDirection = -transform.localScale.x;
             if (other.transform.CompareTag("Jump Through Platform")) {
@@ -157,14 +172,6 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.transform.CompareTag("Moving Platform"))
-        {
-            transform.parent = other.transform;
-        }
-    }
-    
     private void OnCollisionExit2D(Collision2D other)
     {
         if (other.transform.CompareTag("Moving Platform"))
@@ -172,38 +179,53 @@ public class PlayerController : MonoBehaviour
             transform.parent = null;
         }
     }
-
-    public void Damage(int dmg, int knockback)
-    {
-        currentHealth -= dmg;
-        gameObject.GetComponent<Animation>().Play("Character_Redflash");
-        source.PlayOneShot(hurtSound, 1F);
-        DamageReact(knockback);
-    }
     
-    public void Heal(int heal)
-    {
-        currentHealth += heal;
-        gameObject.GetComponent<Animation>().Play("Character_Greenflash");
-    }
-
-    private void DamageReact(int force)
-    {
-        if (knockFromRight) {
-            myRigidBody.linearVelocity = new Vector2(-force, force);
-        }
-        if (!knockFromRight) {
-            myRigidBody.linearVelocity = new Vector2(force, force); 
-            knockbackCount -= Time.deltaTime;
-        }
-    }
     void OnTriggerEnter2D(Collider2D col)
     {
+        if (feetBox.IsTouchingLayers(LayerMask.GetMask("Ground"))){
+            isGrounded = true;
+        }
+
+        if (feetBox.IsTouching(col) && col.CompareTag("Wall")){
+            isWalled = true;
+        }
+        
         if (col.gameObject.layer == LayerMask.NameToLayer ("Kill Plane")) {
             Die();
         }
     }
 
+    public float GetHealth()
+    {
+        return  currentHealth;
+    }
+    
+    public void Damage(int dmg, int knockback, bool direction)
+    {
+        currentHealth -= dmg;
+        //gameObject.GetComponent<Animation>().Play("Character_Redflash");
+        source.PlayOneShot(hurtSound, 1F);
+        DamageReact(knockback, direction);
+    }
+    
+    public void Heal(int heal)
+    {
+        currentHealth += heal;
+        //gameObject.GetComponent<Animation>().Play("Character_Greenflash");
+    }
+
+    
+    private void DamageReact(int force, bool direction)
+    {
+        if (direction) {
+            myRigidBody.linearVelocity = new Vector2(-force, force);
+        }
+        if (!direction) {
+            myRigidBody.linearVelocity = new Vector2(force, force); 
+            //knockbackCount -= Time.deltaTime;
+        }
+    }
+    
     void Die()
     {
         // add some particle effect down the line
@@ -230,7 +252,7 @@ public class PlayerController : MonoBehaviour
         } else if (collectible.GetCollectibleType() == "key") {
             int coinValue = (int)collectible.GetValueChange();
             //source.PlayOneShot(healSound, 1F);
-            theLevelManager.AddKeys(keyValue);
+            //theLevelManager.AddKeys(keyValue); TODO Add Key Value to Level Manager script
             return false;
         }
         
