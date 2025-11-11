@@ -4,7 +4,7 @@ public class CollectibleController : MonoBehaviour
 {
     [SerializeField] CollectibleSO collectible;
     private PlayerController player;
-    SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer;
     private float timeLeft;
 
     private void Awake()

@@ -25,8 +25,7 @@ public class Damage : MonoBehaviour
             //if the x.position of the damage is to your right, the player will get knocked back to the left.
             if (other.transform.position.x < transform.position.x) {
                 player.knockFromRight = true;
-            }
-            else {
+            } else {
                 player.knockFromRight = false;
             }
         }
