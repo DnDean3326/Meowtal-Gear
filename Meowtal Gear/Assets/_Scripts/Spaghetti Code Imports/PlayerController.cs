@@ -10,8 +10,17 @@ public class PlayerController : MonoBehaviour
     // Components
     private Rigidbody2D myRigidBody;
     private Animator myAnimator;
+    private LevelManager theLevelManager;
+    [SerializeField] private CapsuleCollider2D bodyBox;
+    [SerializeField] private BoxCollider2D feetBox;
+    [SerializeField] private BoxCollider2D handBox;
     
     // Variable Declarations
+    private bool isGrounded;
+    private bool isWalled;
+    private bool doubleJump = false;
+    private int maxHealth = 100;
+    public int currentHealth; // Build a method to pull this so the value can remain private
     private Vector2 moveInput;
     
     // Movement Stats
@@ -23,7 +32,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float slideSpeed;
     private bool isWallJumping = false;
 
-    // Ground check for Jump
+    /*// Ground check for Jump
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius; // Radius of groundcheck
     [SerializeField] private LayerMask whatIsGround; // What layer can the player jump
@@ -33,7 +42,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform wallCheck;
     [SerializeField] private float wallCheckRadius; // Radius of wallcheck
     [SerializeField] private LayerMask whatIsWall; // What layer can the player wall slide/jump
-    [SerializeField] private bool isWalled; // Is the player on the wall?
+    [SerializeField] private bool isWalled; // Is the player on the wall?*/
     
     // DMG knockback
     public float knockbackLength; //how long we are going to get pushed back
@@ -41,10 +50,11 @@ public class PlayerController : MonoBehaviour
     public bool knockFromRight; //direction where we are going to get pushed
 
     // HP
-    [SerializeField]  private int maxHealth = 5;
-    public int currentHealth;
+    
+    
     
     // Audio
+    private AudioSource source;
     [SerializeField] AudioClip jumpSound;
     [SerializeField] AudioClip doubleJumpSound;
     [SerializeField] AudioClip wallJumpSound;
@@ -52,12 +62,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] AudioClip zoomSound;
     [SerializeField] AudioClip healSound;
     [SerializeField] AudioClip hurtSound;
-    private AudioSource source;
     
-    private LevelManager theLevelManager;
-
-    private bool doubleJump = false;
-
     private void Awake()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -74,8 +79,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        myAnimator.SetFloat("Speed", Mathf.Abs(myRigidBody.linearVelocity.x));
-        myAnimator.SetBool("Grounded", isGrounded);
+        /*myAnimator.SetFloat("Speed", Mathf.Abs(myRigidBody.linearVelocity.x));
+        myAnimator.SetBool("Grounded", isGrounded);*/
 
         isWalled = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
@@ -222,14 +227,14 @@ public class PlayerController : MonoBehaviour
             source.PlayOneShot(healSound, 1F);
             Heal(healValue);
             return false;
-        } else if (collectible.GetCollectibleType() == "key" && currentHealth < 5) {
-            //int healValue = (int)collectible.GetValueChange();
+        } else if (collectible.GetCollectibleType() == "key") {
+            int coinValue = (int)collectible.GetValueChange();
             //source.PlayOneShot(healSound, 1F);
-            
+            theLevelManager.AddKeys(keyValue);
             return false;
         }
         
-        else { return true;}
+        else { return true; }
     }
     
     public void DeactivateCollectible(CollectibleSO collectible)
