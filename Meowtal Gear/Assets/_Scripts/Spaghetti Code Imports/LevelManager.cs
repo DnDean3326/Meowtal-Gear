@@ -8,9 +8,9 @@ public class LevelManager : MonoBehaviour
 
     private PlayerController player;
     public int coinCount;
+    public int keyCount;
     public TextMeshProUGUI coinText;
-    private bool isLearning;
-    private bool paused;
+    public TextMeshProUGUI keyText;
 
     void Awake()
     {
@@ -19,16 +19,22 @@ public class LevelManager : MonoBehaviour
     
     void Update()
     {
-        coinText.text = "Coins:" + coinCount;
+        coinText.text = "Coins: " + coinCount;
         if (coinCount >= 100) {
             coinCount -= 100;
             player.Heal(5);
         }
+        
+        keyText.text = "Keys: " + keyCount;
     }
 
     public void AddCoins(int coinsToAdd)
     {
         coinCount += coinsToAdd;
-        coinText.text = "Coins:  " + coinCount;
+    }
+    
+    public void AddKeys(int keysToAdd)
+    {
+        keyCount += keysToAdd;
     }
 }

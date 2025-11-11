@@ -217,12 +217,19 @@ public class PlayerController : MonoBehaviour
             source.PlayOneShot(coinSound, 1F);
             theLevelManager.AddCoins(coinValue);
             return false;
-        } else if (collectible.GetCollectibleType() == "heart" && currentHealth < 5) {
+        } else if (collectible.GetCollectibleType() == "health" && currentHealth < 5) {
             int healValue = (int)collectible.GetValueChange();
             source.PlayOneShot(healSound, 1F);
             Heal(healValue);
             return false;
-        } else { return true;}
+        } else if (collectible.GetCollectibleType() == "key" && currentHealth < 5) {
+            //int healValue = (int)collectible.GetValueChange();
+            //source.PlayOneShot(healSound, 1F);
+            
+            return false;
+        }
+        
+        else { return true;}
     }
     
     public void DeactivateCollectible(CollectibleSO collectible)
