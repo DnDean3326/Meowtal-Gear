@@ -2,21 +2,21 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class OldPlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     // Components
     private Rigidbody2D myRigidBody;
     private Animator myAnimator;
-    private LevelManager theLevelManager;
+    //private LevelManager theLevelManager; TODO Script LevelManager
     [SerializeField] private CapsuleCollider2D bodyBox;
     [SerializeField] private BoxCollider2D feetBox;
     [SerializeField] private BoxCollider2D handBox;
     
     // Variable Declarations
-    private bool isGrounded;
-    private bool isWalled;
-    private bool doubleJump = false;
-    private bool isWallJumping = false;
+    [SerializeField] private bool isGrounded;
+    [SerializeField] private bool isWalled;
+    [SerializeField] private bool doubleJump;
+    private bool isWallJumping;
     private float initialGravity;
     private float maxHealth = 100;
     private float currentHealth; // Build a method to pull this so the value can remain private
@@ -48,7 +48,7 @@ public class OldPlayerController : MonoBehaviour
     private void Awake()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
-        theLevelManager = FindObjectOfType<LevelManager>();
+        //theLevelManager = FindFirstObjectByType<LevelManager>(); TODO Script LevelManager
         myAnimator = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
     }
@@ -80,7 +80,7 @@ public class OldPlayerController : MonoBehaviour
 
     private void JumpManage()
     {
-        if (isWalled && isWallJumping != true && isGrounded != true) {
+        if (isWalled && !isWallJumping && !isGrounded) {
             wallJumpDirection = -transform.localScale.x;
         }
         if (isGrounded) {
@@ -100,7 +100,7 @@ public class OldPlayerController : MonoBehaviour
 
     private void Climb()
     {
-        if (feetBox.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        if (feetBox.IsTouchingLayers(LayerMask.GetMask("Climbable")))
         {
             Vector2 playerClimbVelocity = new Vector2(myRigidBody.linearVelocity.x, moveInput.y * climbSpeed);
             myRigidBody.linearVelocity = playerClimbVelocity;
@@ -153,7 +153,7 @@ public class OldPlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.transform.CompareTag("Moving Platform"))
+        if (other.transform.CompareTag("Moving"))
         {
             transform.parent = other.transform;
         }
@@ -164,7 +164,7 @@ public class OldPlayerController : MonoBehaviour
         if (isWalled && !isWallJumping && !isGrounded)
         {
             wallJumpDirection = -transform.localScale.x;
-            if (other.transform.CompareTag("Jump Through Platform")) {
+            if (other.transform.CompareTag("Jump Through")) {
                 //
             } else {
                 myRigidBody.linearVelocity = new Vector2(myRigidBody.linearVelocity.x, -slideSpeed);
@@ -174,7 +174,7 @@ public class OldPlayerController : MonoBehaviour
     
     private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.transform.CompareTag("Moving Platform"))
+        if (other.transform.CompareTag("Moving"))
         {
             transform.parent = null;
         }
@@ -182,16 +182,27 @@ public class OldPlayerController : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (feetBox.IsTouchingLayers(LayerMask.GetMask("Ground"))){
+        if (feetBox.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
             isGrounded = true;
         }
 
-        if (feetBox.IsTouching(col) && col.CompareTag("Wall")){
+        if (handBox.IsTouching(col) && col.CompareTag("Wall")) {
             isWalled = true;
         }
         
-        if (col.gameObject.layer == LayerMask.NameToLayer ("Kill Plane")) {
+        if (col.gameObject.layer == LayerMask.NameToLayer ("Lethal")) {
             Die();
+        }
+    }
+    
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (feetBox.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
+            isGrounded = false;
+        }
+
+        if (col.CompareTag("Wall")) {
+            isWalled = false;
         }
     }
 
@@ -242,7 +253,7 @@ public class OldPlayerController : MonoBehaviour
         } else if (collectible.GetCollectibleType() == "coin") {
             int coinValue = (int)collectible.GetValueChange();
             source.PlayOneShot(coinSound, 1F);
-            theLevelManager.AddCoins(coinValue);
+            //theLevelManager.AddCoins(coinValue); TODO Script LevelManager
             return false;
         } else if (collectible.GetCollectibleType() == "health" && currentHealth < 5) {
             int healValue = (int)collectible.GetValueChange();
@@ -250,13 +261,11 @@ public class OldPlayerController : MonoBehaviour
             Heal(healValue);
             return false;
         } else if (collectible.GetCollectibleType() == "key") {
-            int coinValue = (int)collectible.GetValueChange();
+            int keyValue = (int)collectible.GetValueChange();
             //source.PlayOneShot(healSound, 1F);
             //theLevelManager.AddKeys(keyValue); TODO Add Key Value to Level Manager script
             return false;
-        }
-        
-        else { return true; }
+        } else { return true; }
     }
     
     public void DeactivateCollectible(CollectibleSO collectible)

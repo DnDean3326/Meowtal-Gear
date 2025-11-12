@@ -6,16 +6,16 @@ TagManager:
   tags:
   - Wall
   - Moving
-  - Jumpthrough
+  - Jump Through
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Lethal
   - Water
   - UI
-  - 
-  - 
+  - Ground
+  - Climbable
   - 
   - 
   - 
