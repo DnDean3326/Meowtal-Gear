@@ -2,7 +2,6 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "CollectibleSO", menuName = "Scriptable Objects/CollectibleSO")]
 public class CollectibleSO : ScriptableObject
-
 {
     [SerializeField] private string collectibleType;
     [SerializeField] private float valueChange;
