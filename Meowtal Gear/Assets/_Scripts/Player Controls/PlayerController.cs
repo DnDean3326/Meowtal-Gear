@@ -7,15 +7,15 @@ public class PlayerController : MonoBehaviour
     // Components
     private Rigidbody2D myRigidBody;
     private Animator myAnimator;
-    //private LevelManager theLevelManager; TODO Script LevelManager
+    private LevelManager theLevelManager; 
     [SerializeField] private CapsuleCollider2D bodyBox;
     [SerializeField] private BoxCollider2D feetBox;
     [SerializeField] private BoxCollider2D handBox;
     
     // Variable Declarations
-    [SerializeField] private bool isGrounded;
-    [SerializeField] private bool isWalled;
-    [SerializeField] private bool doubleJump;
+    private bool isGrounded;
+    private bool isWalled;
+    private bool doubleJump;
     private bool isWallJumping;
     private float initialGravity;
     private float maxHealth = 100;
@@ -48,8 +48,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
-        //theLevelManager = FindFirstObjectByType<LevelManager>(); TODO Script LevelManager
-        myAnimator = GetComponent<Animator>();
+        theLevelManager = FindFirstObjectByType<LevelManager>();
         source = GetComponent<AudioSource>();
     }
 
@@ -253,7 +252,7 @@ public class PlayerController : MonoBehaviour
         } else if (collectible.GetCollectibleType() == "coin") {
             int coinValue = (int)collectible.GetValueChange();
             source.PlayOneShot(coinSound, 1F);
-            //theLevelManager.AddCoins(coinValue); TODO Script LevelManager
+            theLevelManager.AddCoins(coinValue);
             return false;
         } else if (collectible.GetCollectibleType() == "health" && currentHealth < 5) {
             int healValue = (int)collectible.GetValueChange();
@@ -263,7 +262,7 @@ public class PlayerController : MonoBehaviour
         } else if (collectible.GetCollectibleType() == "key") {
             int keyValue = (int)collectible.GetValueChange();
             //source.PlayOneShot(healSound, 1F);
-            //theLevelManager.AddKeys(keyValue); TODO Add Key Value to Level Manager script
+            theLevelManager.AddKeys(keyValue);
             return false;
         } else { return true; }
     }
