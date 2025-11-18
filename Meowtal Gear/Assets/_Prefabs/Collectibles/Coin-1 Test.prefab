@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8972289183408439585}
   - component: {fileID: 5493031239993673024}
-  - component: {fileID: 6113982800949597061}
   - component: {fileID: 4650800830616134562}
   - component: {fileID: 8675335172960936210}
+  - component: {fileID: 6113982800949597061}
   m_Layer: 0
   m_Name: Coin-1 Test
   m_TagString: Untagged
@@ -93,19 +93,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6113982800949597061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4905259170050356444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b5456e0670d12647917588bc2332953, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollectibleController
-  collectible: {fileID: 11400000, guid: 9ca919f83af02a84ebf33c7a4a767700, type: 2}
 --- !u!58 &4650800830616134562
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -164,3 +151,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6113982800949597061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4905259170050356444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5456e0670d12647917588bc2332953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollectibleController
+  collectible: {fileID: 11400000, guid: 9ca919f83af02a84ebf33c7a4a767700, type: 2}

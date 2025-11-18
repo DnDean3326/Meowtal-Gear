@@ -13,13 +13,15 @@ public class Door : MonoBehaviour
         myBoxCollider2D = GetComponent<BoxCollider2D>();
     }
         
-    private void OnCollisionEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.CompareTag("Player"))
+        print(other.gameObject.name + " collided with " + gameObject.name);
+        if (other.gameObject.CompareTag("Player"))
         {
-            if (theLevelManager.GetKeyCount() > 1)
+            if (theLevelManager.GetKeyCount() >= 1)
             {
-                theLevelManager.SubtractKeys(1);
+                print(theLevelManager.GetKeyCount());
+                theLevelManager.AddKeys(-1);
                 mySpriteRenderer.enabled = false;
                 myBoxCollider2D.enabled = false;
             }
