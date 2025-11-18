@@ -33,4 +33,19 @@ public class LevelManager : MonoBehaviour
     {
         coinCount += coinsToAdd;
     }
+
+    public void SubtractKeys(int keysToSubtract)
+    {
+        keyCount -= keysToSubtract;
+    }
+
+    public int GetCoinCount()
+    {
+        return coinCount;
+    }
+
+    public int GetKeyCount()
+    {
+        return keyCount;
+    }
 }

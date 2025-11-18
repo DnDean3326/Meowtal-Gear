@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private BoxCollider2D handBox;
     
     // Variable Declarations
-    private bool isGrounded;
-    private bool isWalled;
+    [SerializeField] private bool isGrounded;
+    [SerializeField] private bool isWalled;
     private bool doubleJump;
     private bool isWallJumping;
     private float initialGravity;
@@ -196,9 +196,9 @@ public class PlayerController : MonoBehaviour
     
     void OnTriggerExit2D(Collider2D col)
     {
-        if (feetBox.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
+        /*if (feetBox.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
             isGrounded = false;
-        }
+        }*/
 
         if (col.CompareTag("Wall")) {
             isWalled = false;

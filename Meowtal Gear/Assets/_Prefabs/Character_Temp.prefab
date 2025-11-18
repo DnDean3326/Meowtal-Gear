@@ -83,8 +83,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -317530759
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.8679245, g: 0.47336537, b: 0.1774059, a: 1}
@@ -251,7 +251,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.25, y: 1}
+  m_Size: {x: 0.25, y: 0.85}
   m_EdgeRadius: 0
 --- !u!114 &1157797878416555636
 MonoBehaviour:
@@ -394,9 +394,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   bodyBox: {fileID: 7975535144525140598}
   feetBox: {fileID: 3252279019806838393}
-  handBox: {fileID: 327983329353208425}
+  handBox: {fileID: 0}
+  isGrounded: 0
+  isWalled: 0
   moveSpeed: 5
-  climbSpeed: 0
+  climbSpeed: 5
   slideSpeed: 0
   jumpPower: 6
   wallJumpPower: {x: 8, y: 6}
