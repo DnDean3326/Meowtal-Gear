@@ -7,8 +7,10 @@ public class PlatformTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        other.CompareTag("Player");
-        Invoke(nameof(TriggerSignal), delay);
+        if (other.CompareTag("Player"))
+        {
+            Invoke(nameof(TriggerSignal), delay);
+        }
     }
 
     private void TriggerSignal() {

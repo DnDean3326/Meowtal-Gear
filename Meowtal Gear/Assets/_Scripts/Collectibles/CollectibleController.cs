@@ -4,7 +4,7 @@ public class CollectibleController : MonoBehaviour
 {
     
     [SerializeField] CollectibleSO collectible;
-    private PlayerController player;
+    PlayerController player;
     private SpriteRenderer spriteRenderer;
     private float timeLeft;
     
@@ -35,7 +35,6 @@ public class CollectibleController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && spriteRenderer.enabled) {
-            // Activate collectible
             timeLeft = collectible.GetDuration();
             // Below method not only activates the collectible, but returns a bool letting the system know whether to disable the sprite
             bool visibility = player.ActivateCollectible(collectible);

@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5dde5a1-8376-4c85-8d88-f32c12e10ac6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Meowtal Gear/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Meowtal Gear/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/dean-test-scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/dean-test-scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/End Screen.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Damage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Damage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Main Menu.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="e5dde5a1-8376-4c85-8d88-f32c12e10ac6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +14,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41b87322553648a1a76174c5109c71f91f7000/86/320a5075/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/FallingPlatform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/PlatformTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Menus/Gameplay Menus/GameMenus.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,10 +51,8 @@
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Users\deanm\OneDrive\Documents\GitHub\Meowtal-Gear\Meowtal Gear&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\deanm\OneDrive\Documents\GitHub\Meowtal-Gear\Meowtal Gear" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
@@ -69,10 +61,8 @@
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\deanm\OneDrive\Documents\GitHub\Meowtal-Gear\Meowtal Gear&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\deanm\OneDrive\Documents\GitHub\Meowtal-Gear\Meowtal Gear" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
@@ -120,6 +110,8 @@
       <workItem from="1762875593453" duration="2420000" />
       <workItem from="1762910279637" duration="5000" />
       <workItem from="1763165207516" duration="7110000" />
+      <workItem from="1763477331950" duration="2829000" />
+      <workItem from="1763485244079" duration="32000" />
     </task>
     <servers />
   </component>

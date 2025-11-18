@@ -83,10 +83,10 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -317530759
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.8679245, g: 0.47336537, b: 0.1774059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,7 +132,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 2}
   m_Direction: 0
 --- !u!50 &4415753328571705270
 Rigidbody2D:
@@ -195,17 +195,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.6}
+  m_Offset: {x: 0, y: -1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1, y: 0.15}
   m_EdgeRadius: 0
 --- !u!61 &327983329353208425
 BoxCollider2D:
@@ -241,17 +241,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.6, y: 0}
+  m_Offset: {x: 0.55, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.25, y: 1}
+  m_Size: {x: 0.15, y: 1.5}
   m_EdgeRadius: 0
 --- !u!114 &1157797878416555636
 MonoBehaviour:
@@ -395,9 +395,11 @@ MonoBehaviour:
   bodyBox: {fileID: 7975535144525140598}
   feetBox: {fileID: 3252279019806838393}
   handBox: {fileID: 327983329353208425}
+  isGrounded: 0
+  isWalled: 0
   moveSpeed: 5
-  climbSpeed: 0
-  slideSpeed: 0
+  climbSpeed: 5
+  slideSpeed: 2
   jumpPower: 6
   wallJumpPower: {x: 8, y: 6}
   wallJumpDuration: 0.3
