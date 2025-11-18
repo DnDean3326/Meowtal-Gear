@@ -522,10 +522,6 @@ PrefabInstance:
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 3234041497415648215}
-    - target: {fileID: 7900285228107483976, guid: 6c1addd63497ad347aef2a826e936fba, type: 3}
-      propertyPath: CameraDistance
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8193164722023056048, guid: 6c1addd63497ad347aef2a826e936fba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9
@@ -809,7 +805,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 17.71221
+  orthographic size: 7.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1338,10 +1334,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: key-temp
       objectReference: {fileID: 0}
-    - target: {fileID: 1832876667674496535, guid: 0968e155a34f65b47a205c4fcb1cfc6a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7108674901209470690, guid: 0968e155a34f65b47a205c4fcb1cfc6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.803865
@@ -1517,61 +1509,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 327983329353208425, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: m_Size.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 327983329353208425, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: m_Size.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 327983329353208425, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 327983329353208425, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2654522814432693323, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-    - target: {fileID: 3252279019806838393, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: m_Size.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252279019806838393, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: m_Offset.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252279019806838393, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3293618998398221522, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
       propertyPath: m_Name
       value: Character_Temp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5890601100829344160, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: handBox
-      value: 
-      objectReference: {fileID: 3234041497415648224}
-    - target: {fileID: 5890601100829344160, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: slideSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7975535144525140598, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7975535144525140598, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8736329267994712684, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8736329267994712684, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1623,22 +1563,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8736329267994712684, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
   m_PrefabInstance: {fileID: 3234041497415648214}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &3234041497415648224 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 327983329353208425, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-  m_PrefabInstance: {fileID: 3234041497415648214}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3234041497415648225 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5890601100829344160, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
-  m_PrefabInstance: {fileID: 3234041497415648214}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a18c63b1f7087f148be545b73f793b7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
 --- !u!1001 &7568834639581058236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1647,18 +1571,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4650800830616134562, guid: 6d4f7d1bd3ba3494c8dca149096203d6, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4905259170050356444, guid: 6d4f7d1bd3ba3494c8dca149096203d6, type: 3}
       propertyPath: m_Name
       value: Coin-1 Test
       objectReference: {fileID: 0}
-    - target: {fileID: 6113982800949597061, guid: 6d4f7d1bd3ba3494c8dca149096203d6, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 3234041497415648225}
     - target: {fileID: 8972289183408439585, guid: 6d4f7d1bd3ba3494c8dca149096203d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.4
@@ -1712,14 +1628,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2056211161614937939, guid: a4a7288c810047142a4c1c82cef67df7, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056211161614937939, guid: a4a7288c810047142a4c1c82cef67df7, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -317530759
-      objectReference: {fileID: 0}
     - target: {fileID: 4093428942056811244, guid: a4a7288c810047142a4c1c82cef67df7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5
