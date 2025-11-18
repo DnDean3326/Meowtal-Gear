@@ -17,11 +17,13 @@ public class LevelManager : MonoBehaviour
     
     void Update()
     {
+        TextController();
+    }
+
+    private void TextController()
+    {
         coinText.text = "Coins: " + coinCount;
-        if (coinCount >= 100) {
-            coinCount -= 100;
-            //player.Heal(100);
-        }
+        keyText.text = "Keys: " + keyCount;
     }
     
     public void AddCoins(int coinsToAdd)
@@ -29,8 +31,19 @@ public class LevelManager : MonoBehaviour
         coinCount += coinsToAdd;
     }
     
-    public void AddKeys(int coinsToAdd)
+    public void AddKeys(int keysToAdd)
     {
-        coinCount += coinsToAdd;
+        keyCount += keysToAdd;
+    }
+
+    public int GetCoinCount()
+    {
+        return coinCount;
+    }
+
+    public int GetKeyCount()
+    {
+        print(keyCount);
+        return keyCount;
     }
 }

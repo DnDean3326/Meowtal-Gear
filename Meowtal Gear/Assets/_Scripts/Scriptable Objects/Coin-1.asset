@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb0f2cf274c3224baaf44635b7986bb, type: 3}
   m_Name: Coin-1
   m_EditorClassIdentifier: Assembly-CSharp::CollectibleSO
-  collectibleType: Coin
+  collectibleType: coin
   valueChange: 1
   duration: 0

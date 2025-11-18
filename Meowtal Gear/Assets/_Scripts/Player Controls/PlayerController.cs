@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private BoxCollider2D handBox;
     
     // Variable Declarations
-    private bool isGrounded;
-    private bool isWalled;
+    [SerializeField] private bool isGrounded;
+    [SerializeField] private bool isWalled;
     private bool doubleJump;
     private bool isWallJumping;
     private float initialGravity;
@@ -47,8 +47,8 @@ public class PlayerController : MonoBehaviour
     
     private void Awake()
     {
-        myRigidBody = GetComponent<Rigidbody2D>();
         theLevelManager = FindFirstObjectByType<LevelManager>();
+        myRigidBody = GetComponent<Rigidbody2D>();
         source = GetComponent<AudioSource>();
     }
 
@@ -61,11 +61,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        /*myAnimator.SetFloat("Speed", Mathf.Abs(myRigidBody.linearVelocity.x));
-        myAnimator.SetBool("Grounded", isGrounded);*/
-        
         HealthManage();
         JumpManage();
+        isGrounded = feetBox.IsTouchingLayers(LayerMask.GetMask("Ground"));
         Run();
         Climb();
         FlipSprite();
@@ -181,10 +179,6 @@ public class PlayerController : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (feetBox.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
-            isGrounded = true;
-        }
-
         if (handBox.IsTouching(col) && col.CompareTag("Wall")) {
             isWalled = true;
         }
@@ -196,10 +190,6 @@ public class PlayerController : MonoBehaviour
     
     void OnTriggerExit2D(Collider2D col)
     {
-        if (feetBox.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
-            isGrounded = false;
-        }
-
         if (col.CompareTag("Wall")) {
             isWalled = false;
         }
