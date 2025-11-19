@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5dde5a1-8376-4c85-8d88-f32c12e10ac6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Meowtal Gear/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Meowtal Gear/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/dean-test-scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/dean-test-scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Art/Tilemaps/Main Tilemap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Assets/Art/Tilemaps/Main Tilemap.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Art/Tilemaps/Tilemap Assets/catscratch .asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Art/Tilemaps/Tilemap Assets/catscratch .asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Temp/GameUI.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Temp/GameUI.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Rotating Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Rotating Platform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Damage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Damage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player Controls/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player Controls/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +23,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41b87322553648a1a76174c5109c71f91f7000/86/320a5075/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/FallingPlatform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/PlatformTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Menus/Gameplay Menus/GameMenus.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Scripting",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -118,6 +120,7 @@
       <workItem from="1763165207516" duration="7110000" />
       <workItem from="1763477331950" duration="2829000" />
       <workItem from="1763485244079" duration="32000" />
+      <workItem from="1763520240337" duration="3659000" />
     </task>
     <servers />
   </component>

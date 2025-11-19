@@ -50,11 +50,11 @@ public class PlayerController : MonoBehaviour
         theLevelManager = FindFirstObjectByType<LevelManager>();
         myRigidBody = GetComponent<Rigidbody2D>();
         source = GetComponent<AudioSource>();
+        currentHealth = maxHealth;
     }
 
     private void Start()
     {
-        currentHealth = maxHealth;
         initialGravity = myRigidBody.gravityScale;
     }
 
@@ -199,19 +199,23 @@ public class PlayerController : MonoBehaviour
     {
         return  currentHealth;
     }
-    
-    public void Damage(int dmg, int knockback, bool direction)
+
+    public float GetMaxHealth()
     {
-        currentHealth -= dmg;
-        //gameObject.GetComponent<Animation>().Play("Character_Redflash");
-        source.PlayOneShot(hurtSound, 1F);
-        DamageReact(knockback, direction);
+        return  maxHealth;
     }
-    
-    public void Heal(int heal)
+
+    public void HealthChange(int changeAmount, int knockback, bool direction)
     {
-        currentHealth += heal;
-        //gameObject.GetComponent<Animation>().Play("Character_Greenflash");
+        if (changeAmount < 0) {
+            currentHealth += changeAmount;
+            //gameObject.GetComponent<Animation>().Play("Character_Redflash");
+            source.PlayOneShot(hurtSound, 1F);
+            DamageReact(knockback, direction);
+        } else if (changeAmount > 0) {
+            currentHealth += changeAmount;
+            //gameObject.GetComponent<Animation>().Play("Character_Greenflash");
+        }
     }
 
     
@@ -247,7 +251,7 @@ public class PlayerController : MonoBehaviour
         } else if (collectible.GetCollectibleType() == "health" && currentHealth < 5) {
             int healValue = (int)collectible.GetValueChange();
             source.PlayOneShot(healSound, 1F);
-            Heal(healValue);
+            HealthChange(healValue, 0, false);
             return false;
         } else if (collectible.GetCollectibleType() == "key") {
             int keyValue = (int)collectible.GetValueChange();

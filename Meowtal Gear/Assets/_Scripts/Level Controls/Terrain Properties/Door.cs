@@ -20,7 +20,6 @@ public class Door : MonoBehaviour
         {
             if (theLevelManager.GetKeyCount() >= 1)
             {
-                print(theLevelManager.GetKeyCount());
                 theLevelManager.AddKeys(-1);
                 mySpriteRenderer.enabled = false;
                 myBoxCollider2D.enabled = false;
