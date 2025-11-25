@@ -40,11 +40,8 @@ public class RovingEnemy : MonoBehaviour
     
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (!myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
-        {
-            isWaiting = true;
-            StartCoroutine(WaitForTime(waitDuration));
-        }
+        isWaiting = true;
+        StartCoroutine(WaitForTime(waitDuration));
     }
     
     IEnumerator WaitForTime(float duration)
