@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class RovingEnemy : MonoBehaviour
     private float currentSpeed;
     [SerializeField] private float waitDuration;
     private bool isWaiting;
+    private bool recentBonk;
 
     private void Awake()
     {
@@ -37,18 +39,35 @@ public class RovingEnemy : MonoBehaviour
             myRigidbody.linearVelocity = new Vector2(0f, 0f);
         }
     }
-    
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (!other.gameObject.CompareTag("Player"))
+        {
+            recentBonk = true;
+            FlipDirection();
+            StartCoroutine(BonkCooldown(1.5f));
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D other)
     {
-        isWaiting = true;
-        StartCoroutine(WaitForTime(waitDuration));
+        if (!recentBonk) {
+            isWaiting = true;
+            StartCoroutine(WaitForTime(waitDuration));
+        }
     }
     
     IEnumerator WaitForTime(float duration)
     {
-        isWaiting = true;
         yield return new WaitForSeconds(duration);
         FlipDirection();
+    }
+    
+    IEnumerator BonkCooldown(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        recentBonk = false;
     }
 
     private void FlipDirection()
