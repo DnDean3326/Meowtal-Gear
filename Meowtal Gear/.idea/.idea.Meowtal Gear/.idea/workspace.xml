@@ -45,7 +45,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+<<<<<<< HEAD
     "settings.editor.selected.configurable": "preferences.pluginManager",
+=======
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+>>>>>>> 3170039e9a08fa2a9c96b69850be9e699196facb
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -121,7 +125,7 @@
       <workItem from="1763846098256" duration="2415000" />
       <workItem from="1764080382826" duration="229000" />
       <workItem from="1764081923374" duration="39000" />
-      <workItem from="1764082002064" duration="24000" />
+      <workItem from="1764082002064" duration="341000" />
     </task>
     <servers />
   </component>
@@ -131,6 +135,7 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
     <option name="unityProject" value="true" />
     <option name="unityProjectFolder" value="true" />
   </component>
