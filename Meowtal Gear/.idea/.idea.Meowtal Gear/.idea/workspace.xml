@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e5dde5a1-8376-4c85-8d88-f32c12e10ac6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Meowtal Gear/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Meowtal Gear/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/dean-test-scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/dean-test-scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Characters/Roving_Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Characters/Roving_Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/door-temp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Environment/door-temp.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemy Controls/RovingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemy Controls/RovingEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +22,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Level1.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/deanm/OneDrive/Documents/GitHub/Meowtal-Gear/Meowtal Gear/Assets/Scenes/Level1.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/deanm/OneDrive/Documents/GitHub/Meowtal-Gear/Meowtal Gear/Assets/Scenes/Level1.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Enemy Controls/EnemyCollisionDamage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Enemy Controls/EnemyDamageLight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Enemy Controls/PointMovingEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Enemy Controls/RovingEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Damage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/FallingPlatform.cs" root0="FORCE_HIGHLIGHTING" />
