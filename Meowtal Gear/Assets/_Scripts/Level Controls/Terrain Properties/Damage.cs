@@ -8,7 +8,7 @@ public class Damage : MonoBehaviour
     [SerializeField] int damageForce;
     bool knockbackFromRight;
     
-    void Start()
+    void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
@@ -19,8 +19,7 @@ public class Damage : MonoBehaviour
         {
             if (other.transform.position.x < transform.position.x) {
                 knockbackFromRight = true;
-            }
-            else {
+            } else {
                 knockbackFromRight = false;
             }
             player.HealthChange(-damageDealt, damageForce, knockbackFromRight);
