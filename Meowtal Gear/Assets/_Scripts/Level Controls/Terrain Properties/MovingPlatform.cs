@@ -9,7 +9,7 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] private float platformMoveDelay;
     private bool isMoving = true;
     private Transform currentPoint;
-    private bool isTriggered = false;
+    [SerializeField] private bool isTriggered = false;
 
     private void Start()
     {
