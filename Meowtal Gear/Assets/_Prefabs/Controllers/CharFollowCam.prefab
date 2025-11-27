@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   camera: {fileID: 3404959521067562466}
-  parallaxEffect: 0
+  parallaxEffect: 0.25
 --- !u!1 &2289016338383658355
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   camera: {fileID: 3404959521067562466}
-  parallaxEffect: 0.7
+  parallaxEffect: 1
 --- !u!1 &3017215392372166019
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   camera: {fileID: 3404959521067562466}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.75
 --- !u!1 &3338853711142820951
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +616,7 @@ Transform:
   m_GameObject: {fileID: 3338853711142820951}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886251e9a18ece04ea8e61686c173e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachinePositionComposer
-  CameraDistance: 5
+  CameraDistance: 10
   DeadZoneDepth: 0
   Composition:
     ScreenPosition: {x: 0, y: 0}
@@ -724,15 +724,15 @@ MonoBehaviour:
       Enabled: 0
       Size: {x: 0.2, y: 0.2}
     HardLimits:
-      Enabled: 0
+      Enabled: 1
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
-  CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 3, z: 0}
-  Damping: {x: 1, y: 1, z: 1}
+  CenterOnActivate: 0
+  TargetOffset: {x: 0, y: 4, z: 0}
+  Damping: {x: 1, y: 2, z: 1}
   Lookahead:
-    Enabled: 0
-    Time: 0
+    Enabled: 1
+    Time: 0.25
     Smoothing: 0
     IgnoreY: 0
 --- !u!1 &4967765453414039908
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   camera: {fileID: 3404959521067562466}
-  parallaxEffect: 1
+  parallaxEffect: 0.9
 --- !u!1 &6240481068304593840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,7 +1306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   camera: {fileID: 3404959521067562466}
-  parallaxEffect: 0.2
+  parallaxEffect: 0.5
 --- !u!1 &7767051664451715706
 GameObject:
   m_ObjectHideFlags: 0
