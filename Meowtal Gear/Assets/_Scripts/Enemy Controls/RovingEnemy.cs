@@ -6,27 +6,36 @@ public class RovingEnemy : MonoBehaviour
 {
     private Rigidbody2D myRigidbody;
     private BoxCollider2D myBoxCollider;
+    private Animator myAnimator;
     [SerializeField] private float moveSpeed;
     private float currentSpeed;
     [SerializeField] private float waitDuration;
     private bool isWaiting;
-    private bool recentBonk;
+    private bool flipDelay;
 
     private void Awake()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myBoxCollider = GetComponent<BoxCollider2D>();
+        myAnimator = GetComponent<Animator>();
     }
     
     private void Start()
     {
         isWaiting = false;
         currentSpeed = moveSpeed;
+        StartCoroutine(FlipDelayPeriod(0.25f));
     }
     
     private void Update()
     {
+        AnimationControl();
         Movement();
+    }
+
+    private void AnimationControl()
+    {
+        myAnimator.SetBool("isWaiting", isWaiting);
     }
 
     private void Movement()
@@ -42,20 +51,17 @@ public class RovingEnemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (!other.gameObject.CompareTag("Player"))
-        {
-            recentBonk = true;
+        if (!other.gameObject.CompareTag("Player") && !flipDelay) {
             FlipDirection();
-            StartCoroutine(BonkCooldown(1.5f));
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (!recentBonk) {
-            isWaiting = true;
-            StartCoroutine(WaitForTime(waitDuration));
-        }
+        if (flipDelay) return;
+        print(name + " is flipping due to OnTriggerExit2D");
+        isWaiting = true;
+        StartCoroutine(WaitForTime(waitDuration));
     }
     
     IEnumerator WaitForTime(float duration)
@@ -63,15 +69,18 @@ public class RovingEnemy : MonoBehaviour
         yield return new WaitForSeconds(duration);
         FlipDirection();
     }
-    
-    IEnumerator BonkCooldown(float duration)
+
+    IEnumerator FlipDelayPeriod(float duration)
     {
+        flipDelay = true;
         yield return new WaitForSeconds(duration);
-        recentBonk = false;
+        flipDelay = false;
     }
 
     private void FlipDirection()
     {
+        StartCoroutine(FlipDelayPeriod(1f));
+        print(name + " called the FlipDirection method.");
         moveSpeed = -moveSpeed;
         transform.localScale = new Vector2(transform.localScale.x * -1, 1f);
         isWaiting = false;

@@ -150,9 +150,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.transform.CompareTag("Moving"))
-        {
+        if (other.transform.CompareTag("Moving")) {
             transform.parent = other.transform;
+        }
+
+        if (other.gameObject.layer == LayerMask.NameToLayer("Lethal")) {
+            Die();
         }
     }
     
@@ -171,8 +174,7 @@ public class PlayerController : MonoBehaviour
     
     private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.transform.CompareTag("Moving"))
-        {
+        if (other.transform.CompareTag("Moving")) {
             transform.parent = null;
         }
     }

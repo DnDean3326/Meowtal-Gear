@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: b0d8e48ddb1b2934f88fe00b013cbc4e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9065163773667894842
+    second: Robot-Crop_0
+  - first:
+      213: -467869158378172490
+    second: Robot-Crop_1
+  - first:
+      213: 2506942440741017982
+    second: Robot-Crop_2
+  - first:
+      213: -2750477587461754730
+    second: Robot-Crop_3
+  - first:
+      213: -8114622928391420681
+    second: Robot-Crop_4
+  - first:
+      213: -5378099593530515800
+    second: Robot-Crop_5
+  - first:
+      213: 1599127797699630581
+    second: Robot-Crop_6
+  - first:
+      213: -683863575259109424
+    second: Robot-Crop_7
+  - first:
+      213: 8324339837547068092
+    second: Robot-Crop_8
+  - first:
+      213: -605950202496241013
+    second: Robot-Crop_9
+  - first:
+      213: 2967526009241156975
+    second: Robot-Crop_10
+  - first:
+      213: 6339487462294135299
+    second: Robot-Crop_11
+  - first:
+      213: -3751935340708870083
+    second: Robot-Crop_12
+  - first:
+      213: 8362110904992771755
+    second: Robot-Crop_13
+  - first:
+      213: 2077848730057443797
+    second: Robot-Crop_14
+  - first:
+      213: -8209282318797155409
+    second: Robot-Crop_15
+  - first:
+      213: 8615236059178330542
+    second: Robot-Crop_16
+  - first:
+      213: -1697096790654063448
+    second: Robot-Crop_17
+  - first:
+      213: -969624317951984010
+    second: Robot-Crop_18
+  - first:
+      213: 5346067291143563199
+    second: Robot-Crop_19
+  - first:
+      213: 8587065165861792432
+    second: Robot-Crop_20
+  - first:
+      213: -279359370286082308
+    second: Robot-Crop_21
+  - first:
+      213: -3770181295484572330
+    second: Robot-Crop_22
+  - first:
+      213: 1678683873657959625
+    second: Robot-Crop_23
+  - first:
+      213: 2058689426020752773
+    second: Robot-Crop_24
+  - first:
+      213: -652881010897175239
+    second: Robot-Crop_25
+  - first:
+      213: -7984800914214686514
+    second: Robot-Crop_26
+  - first:
+      213: -4708925274755249071
+    second: Robot-Crop_27
+  - first:
+      213: -2428238057886014859
+    second: Robot-Crop_28
+  - first:
+      213: -9179980897909071137
+    second: Robot-Crop_29
+  - first:
+      213: 1652679145564518167
+    second: Robot-Crop_30
+  - first:
+      213: -952420342906995794
+    second: Robot-Crop_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 14
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Robot-Crop_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36e6304c6eedcd70800000000000000
+      internalID: 9065163773667894842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 35
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf0285ba7bc189f0800000000000000
+      internalID: -467869158378172490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_2
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7918b41ed27ac220800000000000000
+      internalID: 2506942440741017982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 35
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6903ba4f43754d9d0800000000000000
+      internalID: -2750477587461754730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f44df29071136f80800000000000000
+      internalID: -8114622928391420681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_5
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aed0f00ae62d55b0800000000000000
+      internalID: -5378099593530515800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5d65c624e313610800000000000000
+      internalID: 1599127797699630581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_7
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d72ad993bd6286f0800000000000000
+      internalID: -683863575259109424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_8
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba30ae5afef58370800000000000000
+      internalID: 8324339837547068092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82b2a4508b3797f0800000000000000
+      internalID: -605950202496241013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d3d8ace25ce2920800000000000000
+      internalID: 2967526009241156975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_11
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302a51842426af750800000000000000
+      internalID: 6339487462294135299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_12
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3840dcafa27eebc0800000000000000
+      internalID: -3751935340708870083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_13
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baea380509f2c0470800000000000000
+      internalID: 8362110904992771755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_14
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9021c396006dc10800000000000000
+      internalID: 2077848730057443797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_15
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa35337c935c21e80800000000000000
+      internalID: -8209282318797155409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_16
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9e573ec877f8770800000000000000
+      internalID: 8615236059178330542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_17
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aceb93e573b278e0800000000000000
+      internalID: -1697096790654063448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_18
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e34e2f1d33b82f0800000000000000
+      internalID: -969624317951984010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_19
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb762f960eb013a40800000000000000
+      internalID: 5346067291143563199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_20
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0baa25aa5426b2770800000000000000
+      internalID: 8587065165861792432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_21
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6db6102248f1cf0800000000000000
+      internalID: -279359370286082308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_22
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65de1d74610adabc0800000000000000
+      internalID: -3770181295484572330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_23
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c43f8bc612eb4710800000000000000
+      internalID: 1678683873657959625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_24
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58dd1d4202fe19c10800000000000000
+      internalID: 2058689426020752773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_25
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 50
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d30e00e2080f6f0800000000000000
+      internalID: -652881010897175239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_26
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0f402bfd9403190800000000000000
+      internalID: -7984800914214686514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_27
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 3
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15cca5c596986aeb0800000000000000
+      internalID: -4708925274755249071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_28
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 3
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572ae990a5a2d4ed0800000000000000
+      internalID: -2428238057886014859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_29
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 3
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd2224fc2082a9080800000000000000
+      internalID: -9179980897909071137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_30
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 3
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717b1173dee7fe610800000000000000
+      internalID: 1652679145564518167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot-Crop_31
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 3
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab3c288eb258c2f0800000000000000
+      internalID: -952420342906995794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Robot-Crop_0: 9065163773667894842
+      Robot-Crop_1: -467869158378172490
+      Robot-Crop_10: 2967526009241156975
+      Robot-Crop_11: 6339487462294135299
+      Robot-Crop_12: -3751935340708870083
+      Robot-Crop_13: 8362110904992771755
+      Robot-Crop_14: 2077848730057443797
+      Robot-Crop_15: -8209282318797155409
+      Robot-Crop_16: 8615236059178330542
+      Robot-Crop_17: -1697096790654063448
+      Robot-Crop_18: -969624317951984010
+      Robot-Crop_19: 5346067291143563199
+      Robot-Crop_2: 2506942440741017982
+      Robot-Crop_20: 8587065165861792432
+      Robot-Crop_21: -279359370286082308
+      Robot-Crop_22: -3770181295484572330
+      Robot-Crop_23: 1678683873657959625
+      Robot-Crop_24: 2058689426020752773
+      Robot-Crop_25: -652881010897175239
+      Robot-Crop_26: -7984800914214686514
+      Robot-Crop_27: -4708925274755249071
+      Robot-Crop_28: -2428238057886014859
+      Robot-Crop_29: -9179980897909071137
+      Robot-Crop_3: -2750477587461754730
+      Robot-Crop_30: 1652679145564518167
+      Robot-Crop_31: -952420342906995794
+      Robot-Crop_4: -8114622928391420681
+      Robot-Crop_5: -5378099593530515800
+      Robot-Crop_6: 1599127797699630581
+      Robot-Crop_7: -683863575259109424
+      Robot-Crop_8: 8324339837547068092
+      Robot-Crop_9: -605950202496241013
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
