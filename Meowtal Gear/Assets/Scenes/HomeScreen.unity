@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c464910a4f3a8744294c7a194ce5b07a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartMenu
-  StartUI: {fileID: 34182261}
+  startUI: {fileID: 34182261}
   howToUI: {fileID: 852000647}
 --- !u!1 &194687579
 GameObject:

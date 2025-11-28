@@ -4,14 +4,14 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
     
-    [SerializeField] GameObject StartUI;
+    [SerializeField] GameObject startUI;
     [SerializeField] GameObject howToUI;
     private bool startActive;
     private bool howToActive;
 
     private void Start()
     {
-        StartUI.SetActive(true);
+        startUI.SetActive(true);
         howToUI.SetActive(false);
         startActive = true;
         howToActive = false;
@@ -21,10 +21,10 @@ public class StartMenu : MonoBehaviour
     {
         switch (startActive) {
             case true:
-                StartUI.SetActive(true);
+                startUI.SetActive(true);
                 break;
             case false:
-                StartUI.SetActive(false);
+                startUI.SetActive(false);
                 break;
         }
         
