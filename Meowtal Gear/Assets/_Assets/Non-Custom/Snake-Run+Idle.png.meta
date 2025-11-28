@@ -1,0 +1,299 @@
+fileFormatVersion: 2
+guid: 4052a8b6d6e6dfc418821892275b5723
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5877337013689688546
+    second: Snake Run+Idle_scaled_2x_pngcrushed_0
+  - first:
+      213: -1594091885662670589
+    second: Snake Run+Idle_scaled_2x_pngcrushed_1
+  - first:
+      213: 8616332493078172071
+    second: Snake Run+Idle_scaled_2x_pngcrushed_2
+  - first:
+      213: 7144811252205631709
+    second: Snake Run+Idle_scaled_2x_pngcrushed_3
+  - first:
+      213: -3882135711669921752
+    second: Snake Run+Idle_scaled_2x_pngcrushed_4
+  - first:
+      213: -2020406108029717834
+    second: Snake Run+Idle_scaled_2x_pngcrushed_5
+  - first:
+      213: -8992784812602084619
+    second: Snake Run+Idle_scaled_2x_pngcrushed_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Snake Run+Idle_scaled_2x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 117
+        width: 48
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e55c120218f6ea0800000000000000
+      internalID: -5877337013689688546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake Run+Idle_scaled_2x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 5
+        width: 72
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3017eb730e5a0e9e0800000000000000
+      internalID: -1594091885662670589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake Run+Idle_scaled_2x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 5
+        width: 56
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1949c40cc539770800000000000000
+      internalID: 8616332493078172071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake Run+Idle_scaled_2x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 3
+        width: 56
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd83ee2aaf7772360800000000000000
+      internalID: 7144811252205631709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake Run+Idle_scaled_2x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1
+        width: 68
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8285e008322ef1ac0800000000000000
+      internalID: -3882135711669921752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake Run+Idle_scaled_2x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1
+        width: 56
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2fbdc695316f3e0800000000000000
+      internalID: -2020406108029717834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake Run+Idle_scaled_2x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f23357dbd5333380800000000000000
+      internalID: -8992784812602084619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Snake Run+Idle_scaled_2x_pngcrushed_0: -5877337013689688546
+      Snake Run+Idle_scaled_2x_pngcrushed_1: -1594091885662670589
+      Snake Run+Idle_scaled_2x_pngcrushed_2: 8616332493078172071
+      Snake Run+Idle_scaled_2x_pngcrushed_3: 7144811252205631709
+      Snake Run+Idle_scaled_2x_pngcrushed_4: -3882135711669921752
+      Snake Run+Idle_scaled_2x_pngcrushed_5: -2020406108029717834
+      Snake Run+Idle_scaled_2x_pngcrushed_6: -8992784812602084619
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

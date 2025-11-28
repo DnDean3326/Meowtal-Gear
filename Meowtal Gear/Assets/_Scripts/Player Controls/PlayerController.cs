@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
         theLevelManager = FindFirstObjectByType<LevelManager>();
         myRigidBody = GetComponent<Rigidbody2D>();
         source = GetComponent<AudioSource>();
+        myAnimator = GetComponent<Animator>();
         currentHealth = maxHealth;
     }
 
@@ -66,6 +67,8 @@ public class PlayerController : MonoBehaviour
         HealthManage();
         JumpManage();
         isGrounded = feetBox.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        myAnimator.SetFloat("ClimbSpeed", Mathf.Abs(myRigidBody.linearVelocity.y));
+        myAnimator.SetBool("IsGrounded", isGrounded);
         Run();
         Climb();
         FlipSprite();
@@ -93,7 +96,7 @@ public class PlayerController : MonoBehaviour
             Vector2 playerVelocity = new Vector2(moveInput.x * moveSpeed, myRigidBody.linearVelocity.y);
             myRigidBody.linearVelocity = playerVelocity;
             bool hasHorizontalSpeed = Mathf.Abs(myRigidBody.linearVelocity.x) > Mathf.Epsilon;
-            //myAnimator.SetBool("IsRunning", hasHorizontalSpeed);
+            myAnimator.SetBool("IsRunning", hasHorizontalSpeed);
         } 
     }
 
@@ -103,11 +106,11 @@ public class PlayerController : MonoBehaviour
         {
             Vector2 playerClimbVelocity = new Vector2(myRigidBody.linearVelocity.x, moveInput.y * climbSpeed);
             myRigidBody.linearVelocity = playerClimbVelocity;
-            //myAnimator.SetBool("IsClimbing", true);
+            myAnimator.SetBool("IsClimbing", true);
             myRigidBody.gravityScale = 0;
         } else {
             myRigidBody.gravityScale = initialGravity;
-            //myAnimator.SetBool("IsClimbing", false);
+            myAnimator.SetBool("IsClimbing", false);
         }
     }
 
@@ -143,6 +146,7 @@ public class PlayerController : MonoBehaviour
             source.PlayOneShot(doubleJumpSound, 1F);
             doubleJump = false;
         }
+        StartCoroutine(JumpDuration(0.1f));
     }
     
     private void StopWallJumping()
@@ -278,5 +282,12 @@ public class PlayerController : MonoBehaviour
         immuneToDamage = true;
         yield return new WaitForSeconds(duration);
         immuneToDamage = false;
+    }
+    
+    IEnumerator JumpDuration(float duration)
+    {
+        myAnimator.SetBool("IsJumping", true);
+        yield return new WaitForSeconds(duration);
+        myAnimator.SetBool("IsJumping", false);
     }
 }

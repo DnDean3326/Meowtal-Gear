@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 01962b45165b0f743a48bb418c5c3788
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6543040510814445798
+    second: Snake-Jump_scaled_2x_pngcrushed_0
+  - first:
+      213: -4200254187117955908
+    second: Snake-Jump_scaled_2x_pngcrushed_1
+  - first:
+      213: -2903373618039348038
+    second: Snake-Jump_scaled_2x_pngcrushed_2
+  - first:
+      213: 372908135533101765
+    second: Snake-Jump_scaled_2x_pngcrushed_3
+  - first:
+      213: 70104995953579677
+    second: Snake-Jump_scaled_2x_pngcrushed_4
+  - first:
+      213: 7624105105734670673
+    second: Snake-Jump_scaled_2x_pngcrushed_5
+  - first:
+      213: -5749695099578097382
+    second: Snake-Jump_scaled_2x_pngcrushed_6
+  - first:
+      213: 3680122023398755518
+    second: Snake-Jump_scaled_2x_pngcrushed_7
+  - first:
+      213: -1136236443985937692
+    second: Snake-Jump_scaled_2x_pngcrushed_8
+  - first:
+      213: -1400823835692102502
+    second: Snake-Jump_scaled_2x_pngcrushed_9
+  - first:
+      213: 8783181351667053356
+    second: Snake-Jump_scaled_2x_pngcrushed_10
+  - first:
+      213: -7389001089096760146
+    second: Snake-Jump_scaled_2x_pngcrushed_11
+  - first:
+      213: 479395782937419195
+    second: Snake-Jump_scaled_2x_pngcrushed_12
+  - first:
+      213: -7420583721514124206
+    second: Snake-Jump_scaled_2x_pngcrushed_13
+  - first:
+      213: 4975984531536460610
+    second: Snake-Jump_scaled_2x_pngcrushed_14
+  - first:
+      213: -9183478994101000624
+    second: Snake-Jump_scaled_2x_pngcrushed_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 133
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0e5169dac8dca50800000000000000
+      internalID: 6543040510814445798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 131
+        width: 40
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4bc7a1213b5b5c0800000000000000
+      internalID: -4200254187117955908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 123
+        width: 42
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4268eb31525b7d0800000000000000
+      internalID: -2903373618039348038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 125
+        width: 56
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2cd4839f5dc2500800000000000000
+      internalID: 372908135533101765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 129
+        width: 60
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d961bc45f1019f000800000000000000
+      internalID: 70104995953579677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 127
+        width: 46
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1599e8d03334ec960800000000000000
+      internalID: 7624105105734670673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 127
+        width: 46
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11e7d625caf430b0800000000000000
+      internalID: -5749695099578097382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 127
+        width: 46
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc46ce6b7b621330800000000000000
+      internalID: 3680122023398755518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 17
+        width: 56
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea7d5769f64b30f0800000000000000
+      internalID: -1136236443985937692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 17
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c0ca0b4264f8ce0800000000000000
+      internalID: -1400823835692102502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 19
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2333ff67e024e970800000000000000
+      internalID: 8783181351667053356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 19
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4c96778aef47990800000000000000
+      internalID: -7389001089096760146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 17
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd1ec4bce727a600800000000000000
+      internalID: 479395782937419195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 17
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25cba15db6ac40990800000000000000
+      internalID: -7420583721514124206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 13
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bb11a419f3e0540800000000000000
+      internalID: 4975984531536460610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Jump_scaled_2x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 15
+        width: 50
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0562952d28abd8080800000000000000
+      internalID: -9183478994101000624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Snake-Jump_scaled_2x_pngcrushed_0: 6543040510814445798
+      Snake-Jump_scaled_2x_pngcrushed_1: -4200254187117955908
+      Snake-Jump_scaled_2x_pngcrushed_10: 8783181351667053356
+      Snake-Jump_scaled_2x_pngcrushed_11: -7389001089096760146
+      Snake-Jump_scaled_2x_pngcrushed_12: 479395782937419195
+      Snake-Jump_scaled_2x_pngcrushed_13: -7420583721514124206
+      Snake-Jump_scaled_2x_pngcrushed_14: 4975984531536460610
+      Snake-Jump_scaled_2x_pngcrushed_15: -9183478994101000624
+      Snake-Jump_scaled_2x_pngcrushed_2: -2903373618039348038
+      Snake-Jump_scaled_2x_pngcrushed_3: 372908135533101765
+      Snake-Jump_scaled_2x_pngcrushed_4: 70104995953579677
+      Snake-Jump_scaled_2x_pngcrushed_5: 7624105105734670673
+      Snake-Jump_scaled_2x_pngcrushed_6: -5749695099578097382
+      Snake-Jump_scaled_2x_pngcrushed_7: 3680122023398755518
+      Snake-Jump_scaled_2x_pngcrushed_8: -1136236443985937692
+      Snake-Jump_scaled_2x_pngcrushed_9: -1400823835692102502
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
