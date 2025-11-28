@@ -146,7 +146,7 @@ public class PlayerController : MonoBehaviour
             source.PlayOneShot(doubleJumpSound, 1F);
             doubleJump = false;
         }
-        StartCoroutine(JumpDuration(0.1f));
+        StartCoroutine(JumpDuration(0.4f));
     }
     
     private void StopWallJumping()
