@@ -23,7 +23,6 @@ public class Damage : MonoBehaviour
                 knockbackFromRight = false;
             }
             player.HealthChange(-damageDealt, damageForce, knockbackFromRight);
-            //player.knockbackCount = player.knockbackLength;
         }
     }
 }

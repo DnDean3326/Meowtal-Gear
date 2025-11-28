@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
     // DMG knockback
     private float knockbackLength;
     private bool knockFromRight;
+    private bool immuneToDamage;
     
     // Audio
     private AudioSource source;
@@ -56,6 +58,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         initialGravity = myRigidBody.gravityScale;
+        StartCoroutine(DamageImmunity(0.25f));
     }
 
     // Update is called once per frame
@@ -209,11 +212,12 @@ public class PlayerController : MonoBehaviour
 
     public void HealthChange(int changeAmount, int knockback, bool direction)
     {
-        if (changeAmount < 0) {
+        if (changeAmount < 0 && !immuneToDamage) {
             currentHealth += changeAmount;
             //gameObject.GetComponent<Animation>().Play("Character_Redflash");
             source.PlayOneShot(hurtSound, 1F);
             DamageReact(knockback, direction);
+            StartCoroutine(DamageImmunity(0.25f));
         } else if (changeAmount > 0) {
             currentHealth += changeAmount;
             //gameObject.GetComponent<Animation>().Play("Character_Greenflash");
@@ -228,7 +232,6 @@ public class PlayerController : MonoBehaviour
         }
         if (!direction) {
             myRigidBody.linearVelocity = new Vector2(force, force); 
-            //knockbackCount -= Time.deltaTime;
         }
     }
     
@@ -269,5 +272,12 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed -= collectible.GetValueChange();
         }
+    }
+
+    IEnumerator DamageImmunity(float duration)
+    {
+        immuneToDamage = true;
+        yield return new WaitForSeconds(duration);
+        immuneToDamage = false;
     }
 }

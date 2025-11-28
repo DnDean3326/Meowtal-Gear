@@ -402,7 +402,7 @@ MonoBehaviour:
   slideSpeed: 2
   jumpPower: 8
   wallJumpPower: {x: 8, y: 6}
-  wallJumpDuration: 0.3
+  wallJumpDuration: 0.4
   jumpSound: {fileID: 0}
   doubleJumpSound: {fileID: 0}
   wallJumpSound: {fileID: 0}

@@ -30,7 +30,7 @@ public class GameUIController : MonoBehaviour
         myHealthLabel.text = $"{playerController.GetHealth()}/{playerController.GetMaxHealth()}";
 
         float healthRatio = playerController.GetHealth() / playerController.GetMaxHealth();
-        float healthPercent = Mathf.Lerp(8, 88, healthRatio);
+        float healthPercent = Mathf.Lerp(25, 85, healthRatio);
         myHealthBarMask.style.width = Length.Percent(healthPercent);
     }
 }

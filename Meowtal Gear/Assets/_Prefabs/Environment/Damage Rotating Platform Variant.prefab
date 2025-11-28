@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 5033765477731950825}
   - component: {fileID: 7209376898670300287}
   - component: {fileID: 3520897452814127694}
+  - component: {fileID: 5494840921732235826}
   m_Layer: 0
   m_Name: Spike
   m_TagString: Untagged
@@ -217,7 +218,7 @@ SpriteRenderer:
   m_SortingLayerID: -317530759
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fd6d02d826667d74fac1919c123f4c7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc5369329f9e94548aaa912a3cc065e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -281,6 +282,20 @@ PolygonCollider2D:
       - {x: 0.5044508, y: -0.29146215}
       - {x: 0.33316782, y: 0.0020603612}
   m_UseDelaunayMesh: 0
+--- !u!114 &5494840921732235826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659908237307223380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baba4c9feb5ef8408ea4779ff0e4a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageDealt: 10
+  damageForce: 5
 --- !u!1 &921534418862558793
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +341,7 @@ GameObject:
   - component: {fileID: 963936496171866875}
   - component: {fileID: 8854164221442437236}
   - component: {fileID: 4313595843649626386}
+  - component: {fileID: 7641784828017138420}
   m_Layer: 0
   m_Name: Spike (1)
   m_TagString: Untagged
@@ -395,7 +411,7 @@ SpriteRenderer:
   m_SortingLayerID: -317530759
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fd6d02d826667d74fac1919c123f4c7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc5369329f9e94548aaa912a3cc065e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -459,6 +475,20 @@ PolygonCollider2D:
       - {x: 0.5044508, y: -0.29146215}
       - {x: 0.33316782, y: 0.0020603612}
   m_UseDelaunayMesh: 0
+--- !u!114 &7641784828017138420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109503531716752414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baba4c9feb5ef8408ea4779ff0e4a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageDealt: 10
+  damageForce: 5
 --- !u!1 &1953782129950936933
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,6 +774,7 @@ GameObject:
   - component: {fileID: 1786420325097618806}
   - component: {fileID: 2596263634569558382}
   - component: {fileID: 7841218533059467991}
+  - component: {fileID: 9199294345316639023}
   m_Layer: 0
   m_Name: Spike
   m_TagString: Untagged
@@ -813,7 +844,7 @@ SpriteRenderer:
   m_SortingLayerID: -317530759
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fd6d02d826667d74fac1919c123f4c7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc5369329f9e94548aaa912a3cc065e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -877,6 +908,20 @@ PolygonCollider2D:
       - {x: 0.5044508, y: -0.29146215}
       - {x: 0.33316782, y: 0.0020603612}
   m_UseDelaunayMesh: 0
+--- !u!114 &9199294345316639023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2158105367122730900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baba4c9feb5ef8408ea4779ff0e4a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageDealt: 10
+  damageForce: 5
 --- !u!1 &2861765623168327405
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,6 +970,7 @@ GameObject:
   - component: {fileID: 7490584250050075170}
   - component: {fileID: 1154170554454739695}
   - component: {fileID: 7837152542243053766}
+  - component: {fileID: 1035970498702604719}
   m_Layer: 0
   m_Name: Spike (1)
   m_TagString: Untagged
@@ -994,7 +1040,7 @@ SpriteRenderer:
   m_SortingLayerID: -317530759
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fd6d02d826667d74fac1919c123f4c7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc5369329f9e94548aaa912a3cc065e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1058,6 +1104,20 @@ PolygonCollider2D:
       - {x: 0.5044508, y: -0.29146215}
       - {x: 0.33316782, y: 0.0020603612}
   m_UseDelaunayMesh: 0
+--- !u!114 &1035970498702604719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3408918745582067051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baba4c9feb5ef8408ea4779ff0e4a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageDealt: 10
+  damageForce: 5
 --- !u!1 &3980072963998851639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,6 +1403,7 @@ GameObject:
   - component: {fileID: 5632269696858939732}
   - component: {fileID: 3184122816447126936}
   - component: {fileID: 6025485195294435898}
+  - component: {fileID: 523423832428021805}
   m_Layer: 0
   m_Name: Spike (2)
   m_TagString: Untagged
@@ -1412,7 +1473,7 @@ SpriteRenderer:
   m_SortingLayerID: -317530759
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fd6d02d826667d74fac1919c123f4c7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc5369329f9e94548aaa912a3cc065e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1476,6 +1537,20 @@ PolygonCollider2D:
       - {x: 0.5044508, y: -0.29146215}
       - {x: 0.33316782, y: 0.0020603612}
   m_UseDelaunayMesh: 0
+--- !u!114 &523423832428021805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4986947230615053783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baba4c9feb5ef8408ea4779ff0e4a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageDealt: 10
+  damageForce: 5
 --- !u!1 &7009156696427152084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,6 +1562,7 @@ GameObject:
   - component: {fileID: 7810472967134115538}
   - component: {fileID: 6948507798947524668}
   - component: {fileID: 979811656682831237}
+  - component: {fileID: 4951502994896633803}
   m_Layer: 0
   m_Name: Spike (2)
   m_TagString: Untagged
@@ -1556,7 +1632,7 @@ SpriteRenderer:
   m_SortingLayerID: -317530759
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fd6d02d826667d74fac1919c123f4c7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc5369329f9e94548aaa912a3cc065e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1620,6 +1696,20 @@ PolygonCollider2D:
       - {x: 0.5044508, y: -0.29146215}
       - {x: 0.33316782, y: 0.0020603612}
   m_UseDelaunayMesh: 0
+--- !u!114 &4951502994896633803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7009156696427152084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baba4c9feb5ef8408ea4779ff0e4a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageDealt: 10
+  damageForce: 5
 --- !u!1 &8524893068726182552
 GameObject:
   m_ObjectHideFlags: 0
