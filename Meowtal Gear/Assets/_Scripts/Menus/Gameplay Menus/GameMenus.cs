@@ -6,27 +6,41 @@ public class GameMenus : MonoBehaviour
 {
     [SerializeField] GameObject PauseUI;
     [SerializeField] GameObject howToUI;
-    private bool isPaused = false;
-    private bool isLearning = true;
+    [SerializeField] private bool isPaused;
+    [SerializeField] private bool isLearning;
 
     void Start() 
     {
         PauseUI.SetActive(false);
-        howToUI.SetActive(true);
+        howToUI.SetActive(false);
+        isPaused = false;
+        isLearning = false;
     }
 
     void Update()
     {
-        if (isPaused) {
-            PauseUI.SetActive(true);
-        }
-        if (!isPaused) {
-            PauseUI.SetActive(false);
+        switch (isPaused) {
+            case true:
+                PauseUI.SetActive(true);
+                break;
+            case false:
+                PauseUI.SetActive(false);
+                break;
         }
         
+        /*switch (isLearning) {
+            case true:
+                howToUI.SetActive(true);
+                break;
+            case false:
+                howToUI.SetActive(false);
+                break;
+        }*/
+
         if (isPaused || isLearning) {
             Time.timeScale = 0;
         }
+        
         if (!isPaused && !isLearning) {
             Time.timeScale = 1;
         }
@@ -40,12 +54,24 @@ public class GameMenus : MonoBehaviour
         }
     }
 
-    public void ResumeButton() {
+    public void ResumeButton()
+    {
+        print(name + " was clicked.");
         isPaused = false;
+        print (name + " is paused? " + isPaused + ".");
     }
 
-    public void MenuButton() {
+    public void LevelSelectButton()
+    {
         SceneManager.LoadScene(0);
+    }
+    
+    public void ControlsButton()
+    {
+        print(name + " was clicked.");
+        //isPaused = false;
+        isLearning = true;
+        print (name + " is learning? " + isLearning + ".");
     }
 
     public void QuitButton()
@@ -53,7 +79,7 @@ public class GameMenus : MonoBehaviour
         Application.Quit();
     }
     
-    public void PlayButton() {
+    public void ControlsResumeButton() {
         isLearning = false;
         howToUI.SetActive(false);
     }

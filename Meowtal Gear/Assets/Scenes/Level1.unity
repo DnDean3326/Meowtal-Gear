@@ -692,6 +692,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67e612ebc2659154995a4926d0676d2a, type: 3}
+--- !u!1 &162868802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 157805774100561883, guid: 67e612ebc2659154995a4926d0676d2a, type: 3}
+  m_PrefabInstance: {fileID: 162868799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &181223614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -700,6 +705,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 733008676056278260, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
+      propertyPath: PauseUI
+      value: 
+      objectReference: {fileID: 162868802}
+    - target: {fileID: 733008676056278260, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
+      propertyPath: howToUI
+      value: 
+      objectReference: {fileID: 541972982}
     - target: {fileID: 3293618998398221522, guid: 26bdee99daedad44fa9352f600c6d88d, type: 3}
       propertyPath: m_Name
       value: Character_Temp
@@ -1769,6 +1782,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Damage
   damageDealt: 100
   damageForce: 0
+--- !u!1 &541972982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6523339275966888552, guid: 67e612ebc2659154995a4926d0676d2a, type: 3}
+  m_PrefabInstance: {fileID: 162868799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &563041477 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2249530038198568567, guid: a4a7288c810047142a4c1c82cef67df7, type: 3}

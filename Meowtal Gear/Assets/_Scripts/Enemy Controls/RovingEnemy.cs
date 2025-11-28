@@ -59,7 +59,6 @@ public class RovingEnemy : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         if (flipDelay) return;
-        print(name + " is flipping due to OnTriggerExit2D");
         isWaiting = true;
         StartCoroutine(WaitForTime(waitDuration));
     }
@@ -80,7 +79,6 @@ public class RovingEnemy : MonoBehaviour
     private void FlipDirection()
     {
         StartCoroutine(FlipDelayPeriod(1f));
-        print(name + " called the FlipDirection method.");
         moveSpeed = -moveSpeed;
         transform.localScale = new Vector2(transform.localScale.x * -1, 1f);
         isWaiting = false;

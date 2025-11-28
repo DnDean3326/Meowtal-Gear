@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1157797878416555636}
   - component: {fileID: 3278779448071816458}
   - component: {fileID: 5890601100829344160}
+  - component: {fileID: 733008676056278260}
   m_Layer: 0
   m_Name: Character_Temp
   m_TagString: Player
@@ -410,3 +411,17 @@ MonoBehaviour:
   zoomSound: {fileID: 0}
   healSound: {fileID: 0}
   hurtSound: {fileID: 0}
+--- !u!114 &733008676056278260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3293618998398221522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0667846f42964e4fb75e74409a1b713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameMenus
+  PauseUI: {fileID: 0}
+  howToUI: {fileID: 0}
