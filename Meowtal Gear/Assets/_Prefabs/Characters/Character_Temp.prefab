@@ -400,7 +400,7 @@ MonoBehaviour:
   moveSpeed: 5
   climbSpeed: 5
   slideSpeed: 2
-  jumpPower: 6
+  jumpPower: 8
   wallJumpPower: {x: 8, y: 6}
   wallJumpDuration: 0.3
   jumpSound: {fileID: 0}

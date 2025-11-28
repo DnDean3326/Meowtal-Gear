@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4288497281082320772}
   - component: {fileID: 1832876667674496535}
   - component: {fileID: 6925784840560083166}
+  - component: {fileID: 235188415577890304}
   m_Layer: 0
   m_Name: key-temp
   m_TagString: Untagged
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: -317530759
   m_SortingLayer: 2
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: e4a7a1d2177a517458879581237c90ab, type: 3}
+  m_Sprite: {fileID: 1095141833252711340, guid: 18f43128184307b4a92ac5fb347c3947, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,7 +129,7 @@ CapsuleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.33, y: 0.6666667}
-  m_Direction: 0
+  m_Direction: 1
 --- !u!114 &6925784840560083166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,3 +143,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectibleController
   collectible: {fileID: 11400000, guid: b2d903d4536cce54fa0d107e2334b6ba, type: 2}
+--- !u!95 &235188415577890304
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323475587346763151}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6b2428a66728d134480708ec8bb277d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
