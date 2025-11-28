@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3278779448071816458}
   - component: {fileID: 5890601100829344160}
   - component: {fileID: 5142500539212938803}
+  - component: {fileID: 2627962514144579988}
   m_Layer: 0
   m_Name: Character_Temp
   m_TagString: Player
@@ -404,13 +405,13 @@ MonoBehaviour:
   jumpPower: 8
   wallJumpPower: {x: 8, y: 6}
   wallJumpDuration: 0.4
-  jumpSound: {fileID: 0}
-  doubleJumpSound: {fileID: 0}
-  wallJumpSound: {fileID: 0}
-  coinSound: {fileID: 0}
-  zoomSound: {fileID: 0}
-  healSound: {fileID: 0}
-  hurtSound: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: 7ab5013700042b54b9149c2dc8dd6c7c, type: 3}
+  doubleJumpSound: {fileID: 8300000, guid: 43b197ab2d62ad0448a563dffaa18a4e, type: 3}
+  wallJumpSound: {fileID: 8300000, guid: 8fa15a734819c094dae77c8ef4a81da0, type: 3}
+  coinSound: {fileID: 8300000, guid: a18842ecb84bf604a98713481796eabc, type: 3}
+  zoomSound: {fileID: 8300000, guid: 97c42a223cfa281469614e2fd808f541, type: 3}
+  healSound: {fileID: 8300000, guid: a6817cfc93adbef409ef140041cf6aec, type: 3}
+  hurtSound: {fileID: 8300000, guid: 801c1ae7688739649b33115d4dc0a8fd, type: 3}
 --- !u!114 &5142500539212938803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,5 +426,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameMenus
   pauseUI: {fileID: 0}
   howToUI: {fileID: 0}
-  pauseActive: 0
-  howToActive: 0
+--- !u!111 &2627962514144579988
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3293618998398221522}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: f9ec279fb456aa64f895ac8add1b47dc, type: 2}
+  - {fileID: 7400000, guid: b13a09116cc468d4b88f42657d2c856f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0

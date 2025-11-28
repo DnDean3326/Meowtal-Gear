@@ -60,8 +60,7 @@ public class PlayerController : MonoBehaviour
         initialGravity = myRigidBody.gravityScale;
         StartCoroutine(DamageImmunity(0.25f));
     }
-
-    // Update is called once per frame
+    
     private void Update()
     {
         HealthManage();
@@ -214,13 +213,13 @@ public class PlayerController : MonoBehaviour
     {
         if (changeAmount < 0 && !immuneToDamage) {
             currentHealth += changeAmount;
-            //gameObject.GetComponent<Animation>().Play("Character_Redflash");
+            gameObject.GetComponent<Animation>().Play("Char_Redflash");
             source.PlayOneShot(hurtSound, 1F);
             DamageReact(knockback, direction);
             StartCoroutine(DamageImmunity(0.25f));
         } else if (changeAmount > 0) {
             currentHealth += changeAmount;
-            //gameObject.GetComponent<Animation>().Play("Character_Greenflash");
+            gameObject.GetComponent<Animation>().Play("Char_Greenflash");
         }
     }
 

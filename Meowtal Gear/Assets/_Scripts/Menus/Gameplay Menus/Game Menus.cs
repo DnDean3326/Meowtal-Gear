@@ -58,7 +58,7 @@ public class GameMenus : MonoBehaviour
 
     public void LevelSelectButton()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
     }
 
     public void ControlsButton()
