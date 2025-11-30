@@ -39,13 +39,14 @@ public class PlayerController : MonoBehaviour
     
     // Audio
     private AudioSource source;
-    [SerializeField] AudioClip jumpSound;
-    [SerializeField] AudioClip doubleJumpSound;
-    [SerializeField] AudioClip wallJumpSound;
-    [SerializeField] AudioClip coinSound;
-    [SerializeField] AudioClip zoomSound;
-    [SerializeField] AudioClip healSound;
-    [SerializeField] AudioClip hurtSound;
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip doubleJumpSound;
+    [SerializeField] private AudioClip wallJumpSound;
+    [SerializeField] private AudioClip coinSound;
+    [SerializeField] private AudioClip keySound;
+    [SerializeField] private AudioClip zoomSound;
+    [SerializeField] private AudioClip healSound;
+    [SerializeField] private AudioClip hurtSound;
     
     private void Awake()
     {
@@ -263,7 +264,7 @@ public class PlayerController : MonoBehaviour
             return false;
         } else if (collectible.GetCollectibleType() == "key") {
             int keyValue = (int)collectible.GetValueChange();
-            //source.PlayOneShot(healSound, 1F);
+            source.PlayOneShot(keySound, 1F);
             theLevelManager.AddKeys(keyValue);
             return false;
         } else { return true; }

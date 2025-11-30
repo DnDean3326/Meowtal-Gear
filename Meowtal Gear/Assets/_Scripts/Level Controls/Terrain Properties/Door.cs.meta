@@ -1,2 +1,12 @@
 fileFormatVersion: 2
 guid: 2e64eea88fdcf084799062443f48a11c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - unlockSound: {fileID: 8300000, guid: 45926ea4525409945a8e33461b815d88, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

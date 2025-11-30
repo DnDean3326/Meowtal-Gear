@@ -6,13 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="e5dde5a1-8376-4c85-8d88-f32c12e10ac6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Meowtal Gear/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Meowtal Gear/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HomeScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HomeScreen.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animation/MC/Snake Animations/Snake-Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Assets/Animation/MC/Snake Animations/Snake-Controller.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Characters/Character_Temp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Characters/Character_Temp.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Controllers/Level Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Controllers/Level Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemy Controls/RovingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemy Controls/RovingEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Menus/Gameplay Menus/GameMenus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Menus/Gameplay Menus/GameMenus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Exit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Exit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Rope.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Rope.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/door-temp.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/door-temp.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Door.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Door.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Exit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Exit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player Controls/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player Controls/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +148,7 @@
       <workItem from="1764262218380" duration="187000" />
       <workItem from="1764262528161" duration="3118000" />
       <workItem from="1764305456791" duration="2426000" />
+      <workItem from="1764469285326" duration="2669000" />
     </task>
     <servers />
   </component>
