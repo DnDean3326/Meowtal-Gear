@@ -2220,6 +2220,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Locked Door
       objectReference: {fileID: 0}
+    - target: {fileID: 6599833607324571635, guid: 30340af877f74644cb3d988d593eec28, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816560617394167619, guid: 30340af877f74644cb3d988d593eec28, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9163641689782265971, guid: 30340af877f74644cb3d988d593eec28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.5
@@ -18298,6 +18306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Locked Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6599833607324571635, guid: 30340af877f74644cb3d988d593eec28, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 9163641689782265971, guid: 30340af877f74644cb3d988d593eec28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.5
@@ -20982,6 +20994,10 @@ PrefabInstance:
     - target: {fileID: 4807654538612101179, guid: 30340af877f74644cb3d988d593eec28, type: 3}
       propertyPath: m_Name
       value: Locked Door (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599833607324571635, guid: 30340af877f74644cb3d988d593eec28, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 9163641689782265971, guid: 30340af877f74644cb3d988d593eec28, type: 3}
       propertyPath: m_LocalPosition.x

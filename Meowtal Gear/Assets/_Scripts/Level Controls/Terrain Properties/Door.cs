@@ -28,6 +28,7 @@ public class Door : MonoBehaviour
                 theLevelManager.AddKeys(-1);
                 source.PlayOneShot(unlockSound, 1F);
                 myAnimator.SetBool("IsUnlocked", true);
+                mySpriteRenderer.transform.localScale = new Vector2(transform.localScale.x + 0.7f, 1f);
                 myBoxCollider2D.enabled = false;
             }
         }

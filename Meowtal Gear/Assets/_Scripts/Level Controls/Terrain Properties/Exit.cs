@@ -4,12 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class Exit : MonoBehaviour
 {
+    private SpriteRenderer mySpriteRenderer;
     private Animator myAnimator;
     private AudioSource source;
     [SerializeField] private AudioClip unlockSound;
     
     private void Awake()
     {
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
         source = GetComponent<AudioSource>();
         myAnimator = GetComponent<Animator>();
     }
