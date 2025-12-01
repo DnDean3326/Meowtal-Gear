@@ -51,14 +51,17 @@ public class RovingEnemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (!other.gameObject.CompareTag("Player") && !flipDelay) {
-            FlipDirection();
-        }
+        if (flipDelay) return;
+        if (other.gameObject.CompareTag("Player")) return;
+        if (other.gameObject.CompareTag("Collectible")) return;
+        FlipDirection();
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (flipDelay) return;
+        if (other.gameObject.CompareTag("Player")) return;
+        if (other.gameObject.CompareTag("Collectible")) return;
         isWaiting = true;
         StartCoroutine(WaitForTime(waitDuration));
     }

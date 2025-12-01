@@ -16,6 +16,11 @@ public class GameUIController : MonoBehaviour
     
     private void Start()
     {
+        Link();
+    }
+
+    public void Link()
+    {
         myHealthLabel = myUIDoc.rootVisualElement.Q<Label>("HealthLabel");
         myHealthBarMask = myUIDoc.rootVisualElement.Q<VisualElement>("HealthBarMask");
     }

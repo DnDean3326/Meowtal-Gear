@@ -6,13 +6,23 @@ public class GameMenus : MonoBehaviour
 {
     [SerializeField] private GameObject pauseUI;
     [SerializeField] private GameObject howToUI;
+    [SerializeField] private GameObject gameUI;
+    [SerializeField] private GameObject HUD;
+    private GameUIController myUIController;
     private bool pauseActive;
     private bool howToActive;
 
+    private void Awake()
+    {
+        myUIController = FindFirstObjectByType<GameUIController>();
+    }
+    
     private void Start()
     {
         pauseUI.SetActive(false);
         howToUI.SetActive(false);
+        gameUI.SetActive(true);
+        HUD.SetActive(true);
         pauseActive = false;
         howToActive = false;
     }
@@ -31,9 +41,13 @@ public class GameMenus : MonoBehaviour
         switch (howToActive) {
             case true:
                 howToUI.SetActive(true);
+                gameUI.SetActive(false);
+                HUD.SetActive(false);
                 break;
             case false:
                 howToUI.SetActive(false);
+                //gameUI.SetActive(true);
+                //HUD.SetActive(true);
                 break;
         }
 
@@ -76,5 +90,6 @@ public class GameMenus : MonoBehaviour
     {
         pauseActive = true;
         howToActive = false;
+        myUIController.Link();
     }
 }

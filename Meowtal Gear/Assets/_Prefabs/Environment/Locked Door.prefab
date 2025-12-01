@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -317530759
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 3f64cfa400f1b7e4cbaf43c4618ee700, type: 3}
   m_Color: {r: 0.32704395, g: 0.3260155, b: 0.3260155, a: 1}
   m_FlipX: 0
@@ -132,7 +132,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.511579, y: 3.511579}
+    oldSize: {x: 3.5870967, y: 3.5870967}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   unlockSound: {fileID: 8300000, guid: 45926ea4525409945a8e33461b815d88, type: 3}
+  isFacingRight: 0
 --- !u!95 &6816560617394167619
 Animator:
   serializedVersion: 7

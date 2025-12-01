@@ -256,6 +256,7 @@ public class PlayerController : MonoBehaviour
             int coinValue = (int)collectible.GetValueChange();
             source.PlayOneShot(coinSound, 1F);
             theLevelManager.AddCoins(coinValue);
+            HealthChange(coinValue * 5, 0, false);
             return false;
         } else if (collectible.GetCollectibleType() == "health" && currentHealth < 5) {
             int healValue = (int)collectible.GetValueChange();

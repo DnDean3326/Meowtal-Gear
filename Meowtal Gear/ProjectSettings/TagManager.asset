@@ -8,6 +8,7 @@ TagManager:
   - Moving
   - Jump Through
   - Door
+  - Collectible
   layers:
   - Default
   - TransparentFX

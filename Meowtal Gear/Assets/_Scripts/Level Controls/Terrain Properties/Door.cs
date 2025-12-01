@@ -3,16 +3,15 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     private LevelManager theLevelManager; 
-    private SpriteRenderer mySpriteRenderer;
     private BoxCollider2D myBoxCollider2D;
     private Animator myAnimator;
     private AudioSource source;
     [SerializeField] private AudioClip unlockSound;
+    [SerializeField] private bool isFacingRight;
 
     private void Awake()
     {
         theLevelManager = FindFirstObjectByType<LevelManager>();
-        mySpriteRenderer = GetComponent<SpriteRenderer>();
         myBoxCollider2D = GetComponent<BoxCollider2D>();
         source = GetComponent<AudioSource>();
         myAnimator = GetComponent<Animator>();
@@ -28,7 +27,7 @@ public class Door : MonoBehaviour
                 theLevelManager.AddKeys(-1);
                 source.PlayOneShot(unlockSound, 1F);
                 myAnimator.SetBool("IsUnlocked", true);
-                mySpriteRenderer.transform.localScale = new Vector2(transform.localScale.x + 0.7f, 1f);
+                transform.position = isFacingRight ? new Vector2(transform.position.x + -0.7f, transform.position.y) : new Vector2(transform.position.x + 0.7f, transform.position.y);
                 myBoxCollider2D.enabled = false;
             }
         }
