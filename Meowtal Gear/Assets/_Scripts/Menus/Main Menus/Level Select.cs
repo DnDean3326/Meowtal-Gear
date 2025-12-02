@@ -3,6 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelect : MonoBehaviour
 {
+    public void StartMenuButton()
+    {
+        SceneManager.LoadScene(0);
+    }
+    
     public void LevelOneButton()
     {
         SceneManager.LoadScene(1);

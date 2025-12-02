@@ -6,21 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="e5dde5a1-8376-4c85-8d88-f32c12e10ac6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Meowtal Gear/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Meowtal Gear/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HomeScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HomeScreen.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level Select.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level Select.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animation/MC/Cat-Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Assets/Animation/MC/Cat-Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animation/MC/Cat-Controller.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Assets/Animation/MC/Cat-Controller.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animation/MC/Cat-Fall.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Assets/Animation/MC/Cat-Fall.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Collectibles/Coin-1 Test.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Collectibles/Coin-1 Test.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Locked Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Locked Door.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemy Controls/RovingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemy Controls/RovingEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/GameUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/GameUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Exit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Level Controls/Terrain Properties/Exit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Menus/Gameplay Menus/Game Menus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Menus/Gameplay Menus/Game Menus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player Controls/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player Controls/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Controllers/Cameras.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Controllers/Cameras.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Controllers/Level Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Controllers/Level Manager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Menus/Main Menus/Level Select.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Menus/Main Menus/Level Select.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +151,8 @@
       <workItem from="1764305456791" duration="2426000" />
       <workItem from="1764469285326" duration="2669000" />
       <workItem from="1764626121529" duration="40000" />
-      <workItem from="1764626193549" duration="4485000" />
+      <workItem from="1764626193549" duration="5104000" />
+      <workItem from="1764653165030" duration="1069000" />
     </task>
     <servers />
   </component>
